@@ -9,6 +9,7 @@ sysMessages.forEach(messages => messages.init());
 
 [...document.querySelectorAll('.component.type--header .user .form')].forEach(form => {
   form.addEventListener('submit', function(event) {
+    event.preventDefault();
     const elements = [
       {
         selector: form.querySelector('input[name="user"]'),
