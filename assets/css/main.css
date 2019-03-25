@@ -81,8 +81,8 @@ a {
 
 }
 .section.theme--solid {
-  background-color: var(--theme-primary__color--balck);
-  color: var(--theme-primary__color--white);
+  background-color: var(--theme-primary__color--white);
+  color: var(--theme-primary__color--black);
 }
 .section.theme--dark {
   background-color: var(--theme-primary__color--1);
@@ -124,6 +124,10 @@ a {
   min-height: 60vh;
   display: grid;
   align-items: stretch;
+}
+.section.theme--first-header {
+  position: relative;
+  margin-top: calc(-8px + (-1.4rem / 2));
 }
 .section.size--container {
   padding-right: calc((100% - var(--container__width)) / 2);
@@ -773,4 +777,80 @@ a {
   align-content: stretch;
   align-items: center;
   grid-gap: 12px;
+}
+/* SECTION */
+.component.type--section {
+  display: grid;
+  justify-content: stretch;
+  grid-gap: 16px;
+}
+  .component.type--section .section__title {
+    position: relative;
+    display: grid;
+    justify-content: center;
+    padding: 0 32px;
+  }
+  .component.type--section .section__title::before {
+    content: '';
+    position: absolute;
+    top: calc(8px + (1.4rem / 2) - 2px);
+    width: 100%;
+    height: 4px;
+    background-color: var(--theme-primary__color--1);
+  }
+    .component.type--section .section__title .content {
+      position: relative;
+      border-radius: 8px;
+      padding: 8px 16px;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 1.4rem;
+      background-color: var(--theme-primary__color--1);
+      color: var(--theme-primary__color--2);
+    }
+  .component.type--section .section__content {
+  }
+/* SERVICES */
+.component.type--services {
+
+}
+  .component.type--services .services {
+    display: grid;
+    grid-row-gap: 32px;
+    padding: 32px 0;
+  }
+    .component.type--services .service {
+      position: relative;
+      padding-top: 66.66%;
+    }
+      .component.type--services .service .image {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+      }
+      .component.type--services .service .image img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 50%;
+      }
+      .component.type--services .service .information {
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        padding: 12px;
+        background-color: rgba(0, 0, 0, 0.6);
+        color: #fff;
+      }
+        .component.type--services .service .name {
+          
+        }
+@media (min-width: 960px) {
+  .component.type--services .services {
+    grid-template-columns: repeat(2, calc((100% - (32px * 1)) / 2));
+    justify-content: space-between;
+  }
 }
