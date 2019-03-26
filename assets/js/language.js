@@ -13,7 +13,21 @@ const languages = [
       contactUsFromInputSubjectRequiredTitle: '',
       contactUsFromInputSubjectRequiredContent: 'subject field is required',
       contactUsFromInputMessageRequiredTitle: '',
-      contactUsFromInputMessageRequiredContent: 'message field is required'
+      contactUsFromInputMessageRequiredContent: 'message field is required',
+      registrationFromInputImageWrongExtTitle: '',
+      registrationFromInputImageWrongExtContent: 'this is not an image please try again',
+      registrationFromInputImageTimeoutTitle: '',
+      registrationFromInputImageTimeoutContent: 'image take to long to upload please try agian',
+      registrationFromInputImageRequiredTitle: '',
+      registrationFromInputImageRequiredContent: 'image field is required',
+      registrationFromInputUserRequiredTitle: '',
+      registrationFromInputUserRequiredContent: 'user name field is required',
+      registrationFromInputPasswordRequiredTitle: '',
+      registrationFromInputPasswordRequiredContent: 'password field is required',
+      registrationFromInputPasswordConfirmRequiredTitle: '',
+      registrationFromInputPasswordConfirmRequiredContent: 'password confirm field is required',
+      registrationFromInputEmailRequiredTitle: '',
+      registrationFromInputEmailRequiredContent: 'email field is required'
     }
   },
   {
@@ -30,7 +44,21 @@ const languages = [
       contactUsFromInputSubjectRequiredTitle: '',
       contactUsFromInputSubjectRequiredContent: 'حقل عنوان الرسالة مطلوب',
       contactUsFromInputMessageRequiredTitle: '',
-      contactUsFromInputMessageRequiredContent: 'حقل الرسالة مطلوب'
+      contactUsFromInputMessageRequiredContent: 'حقل الرسالة مطلوب',
+      registrationFromInputImageWrongExtTitle: '',
+      registrationFromInputImageWrongExtContent: 'هذا الملف غير مدعم كصور من فضلك حاول مرة اخرى',
+      registrationFromInputImageTimeoutTitle: '',
+      registrationFromInputImageTimeoutContent: 'لقد استغرق تحميل الصورة الكثير من الوقت من فضلك حاول مرة اخرى',
+      registrationFromInputImageRequiredTitle: '',
+      registrationFromInputImageRequiredContent: 'حقل الصورة مطلوب',
+      registrationFromInputUserRequiredTitle: '',
+      registrationFromInputUserRequiredContent: 'حقل اسم المستخدم مطلوب',
+      registrationFromInputPasswordRequiredTitle: '',
+      registrationFromInputPasswordRequiredContent: 'حقل كلمة المرور مطلوب',
+      registrationFromInputPasswordConfirmRequiredTitle: '',
+      registrationFromInputPasswordConfirmRequiredContent: 'حقل تاكيد كلمة المرور مطلوب',
+      registrationFromInputEmailRequiredTitle: '',
+      registrationFromInputEmailRequiredContent: 'حقل البريد الالكترونى موجود'
     }
   }
 ];
