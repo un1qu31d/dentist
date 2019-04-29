@@ -856,6 +856,24 @@ a {
     }
   .component.type--section .section__content {
   }
+  .component.type--section .section__options {
+    margin: -8px 0 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+    .component.type--section .section__option {
+      margin: 8px;
+      border-radius: 8px;
+      padding: 8px 16px;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 1rem;
+      background-color: var(--theme-primary__color--1);
+      color: var(--theme-primary__color--white);
+    }
+    .component.type--section .section__option:hover {
+      color: var(--theme-primary__color--2);
+    }
 /* ARTICLES */
 .component.type--articles {
 
