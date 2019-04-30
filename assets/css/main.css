@@ -200,7 +200,7 @@ a {
 }
   .component.type--header .brand {
     display: grid;
-    grid-auto-flow: column;
+    grid-template-columns: repeat(2, max-content);
     justify-content: space-between;
     justify-items: start;
     align-content: stretch;
