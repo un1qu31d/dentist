@@ -30,24 +30,11 @@ a {
   --theme-primary__color--1: #591c58;
   --theme-primary__color--2: #fcd207;
   --theme-primary__color--3: #fff9ea;
-  --theme-primary__color--balck: #000;
+  --theme-primary__color--4: #f5f7fa;
+  --theme-primary__color--5: #d6d7d8;
+  --theme-primary__color--black: #000;
   --theme-primary__color--white: #fff;
   --theme-primary__overlay--1__color: rgba(89, 28, 88, 0.2);
-  /* --theme-primary__messages__color--1: #383d41;
-  --theme-primary__messages__color--2: #e2e3e5;
-  --theme-primary__messages__color--3: #d6d8db;
-  --theme-primary__messages--success__color--1: #155724;
-  --theme-primary__messages--success__color--2: #d4edda;
-  --theme-primary__messages--success__color--3: #c3e6cb;
-  --theme-primary__messages--info__color--1: #004085;
-  --theme-primary__messages--info__color--2: #cce5ff;
-  --theme-primary__messages--info__color--3: #b8daff;
-  --theme-primary__messages--warning__color--1: #856404;
-  --theme-primary__messages--warning__color--2: #fff3cd;
-  --theme-primary__messages--warning__color--3: #ffeeba;
-  --theme-primary__messages--danger__color--1: #721c24;
-  --theme-primary__messages--danger__color--2: #f8d7da;
-  --theme-primary__messages--danger__color--3: #f5c6cb; */
   --theme-primary__messages__color--1: #212121;
   --theme-primary__messages__color--2: #F5F5F5;
   --theme-primary__messages__color--3: #BDBDBD;
@@ -118,7 +105,7 @@ a {
   min-height: 100vh;
   display: grid;
   align-items: stretch;
-  background-image: linear-gradient(#f5f7fa, #fff, #f5f7fa);
+  background-image: linear-gradient(var(--theme-primary__color--4), var(--theme-primary__color--white), var(--theme-primary__color--4));
 }
 .section.theme--cover {
   min-height: 60vh;
@@ -275,7 +262,7 @@ a {
         border: 1px solid var(--theme-primary__messages--danger__color--1);
       }
       .component.type--header .user .form input[type="text"], .component.type--header .user .form input[type="password"] {
-        background-image: radial-gradient(#f5f7fa 40%, #d6d7d8);
+        background-image: radial-gradient(var(--theme-primary__color--4) 40%, var(--theme-primary__color--5));
       }
       .component.type--header .user .form span {
         text-transform: uppercase;
@@ -912,7 +899,7 @@ a {
         bottom: 0;
         padding: 12px;
         background-color: rgba(0, 0, 0, 0.6);
-        color: #fff;
+        color: var(--theme-primary__color--white);
       }
         .component.type--articles .article .name {
           text-transform: uppercase;
