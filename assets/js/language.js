@@ -27,7 +27,11 @@ const languages = [
       registrationFromInputPasswordConfirmRequiredTitle: '',
       registrationFromInputPasswordConfirmRequiredContent: 'password confirm field is required',
       registrationFromInputEmailRequiredTitle: '',
-      registrationFromInputEmailRequiredContent: 'email field is required'
+      registrationFromInputEmailRequiredContent: 'email field is required',
+      loginFromInputUserRequiredTitle: '',
+      loginFromInputUserRequiredContent: 'user name field is required',
+      loginFromInputPasswordRequiredTitle: '',
+      loginFromInputPasswordRequiredContent: 'password field is required',
     }
   },
   {
@@ -58,7 +62,11 @@ const languages = [
       registrationFromInputPasswordConfirmRequiredTitle: '',
       registrationFromInputPasswordConfirmRequiredContent: 'حقل تاكيد كلمة المرور مطلوب',
       registrationFromInputEmailRequiredTitle: '',
-      registrationFromInputEmailRequiredContent: 'حقل البريد الالكترونى موجود'
+      registrationFromInputEmailRequiredContent: 'حقل البريد الالكترونى موجود',
+      loginFromInputUserRequiredTitle: '',
+      loginFromInputUserRequiredContent: 'حقل اسم المستخدم مطلوب',
+      loginFromInputPasswordRequiredTitle: '',
+      loginFromInputPasswordRequiredContent: 'حقل كلمة المرور مطلوب',
     }
   }
 ];

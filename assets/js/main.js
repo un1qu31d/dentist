@@ -214,3 +214,46 @@ window.addEventListener('change', function(event) {
     messages.length && event.preventDefault();
   });
 });
+
+const loginFormMessages = [...document.querySelectorAll('.component.type--login-form-messages')].map(element => new Messages({selector: element}));
+loginFormMessages.forEach(messages => messages.init());
+
+[...document.querySelectorAll('.component.type--login-form .form')].forEach(form => {
+  form.addEventListener('submit', function(event) {
+    const elements = [
+      {
+        selector: form.querySelector('input[name="user"]'),
+        rules: [
+          {
+            expression: new Function('value', 'return value'),
+            message: {type: 'danger', title: language.registrationFromInputUserRequiredTitle, content: language.registrationFromInputUserRequiredContent}
+          }
+        ]
+      },
+      {
+        selector: form.querySelector('input[name="password"]'),
+        rules: [
+          {
+            expression: new Function('value', 'return value'),
+            message: {type: 'danger', title: language.registrationFromInputPasswordRequiredTitle, content: language.registrationFromInputPasswordRequiredContent}
+          }
+        ]
+      }
+    ];
+    const messages = [];
+    loginFormMessages.forEach(messages => messages.clear());
+    elements.forEach(element => {
+      element.selector.parentElement.classList.remove('error');
+    });
+    elements.forEach(element => {
+      element.rules.forEach(rule => {
+        if(!rule.expression(element.selector.value)) {
+          element.selector.parentElement.classList.add('error');
+          messages.push(rule.message);
+        }
+      });
+    });
+    messages.forEach(message => loginFormMessages.forEach(messages => messages.add(message.type, message.title, message.content)));
+    messages.length && event.preventDefault();
+  });
+});

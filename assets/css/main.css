@@ -1199,3 +1199,142 @@ a {
         text-transform: capitalize;
         font-weight: bold;
       }
+/* LOGIN FORM */
+.component.type--login-form {
+  box-shadow: 0 0 4px 0 var(--theme-primary__color--1);
+  margin: 32px auto;
+  border-radius: 16px;
+  padding: 32px;
+  max-width: 320px;
+}
+  .component.type--login-form .form {
+    padding: 32px 0;
+  }
+    .component.type--login-form .form .inputs {
+      display: grid;
+      grid-gap: 32px;
+    }
+      .component.type--login-form .form .input {
+        display: grid;
+        justify-items: start;
+        grid-gap: 8px;
+      }
+      .component.type--login-form .form .input.theme--options {
+        grid-auto-flow: column;
+        justify-content: space-between;
+        align-items: center;
+      }
+        .component.type--login-form .form .input label {
+          text-transform: uppercase;
+        }
+        .component.type--login-form .form .input input {
+          box-sizing: border-box;
+          margin: 0;
+          outline-color: var(--theme-primary__color--2);
+          border: 1px solid var(--theme-primary__color--1);
+          border-radius: 8px;
+          padding: 8px;
+          max-width: 100%;
+          text-transform: capitalize;
+          background-color: var(--theme-primary__color--white);
+          color: var(--theme-primary__color--1);
+        }
+        .component.type--login-form .form .input a {
+          text-transform: capitalize;
+          color: var(--theme-primary__color--1);
+        }
+        .component.type--login-form .form .input input[type="text"], .component.type--login-form .form .input input[type="password"], .component.type--login-form .form .input input[type="email"] {
+          width: 100%;
+        }
+        .component.type--login-form .form .input.error input[type="text"], .component.type--login-form .form .input.error input[type="password"], .component.type--login-form .form .input.error input[type="email"] {
+          border-color: var(--theme-primary__messages--danger__color--1);
+        }
+        .component.type--login-form .form .input input[type="submit"] {
+          cursor: pointer;
+        }
+        .component.type--login-form .form .input.type--image .image {
+          cursor: pointer;
+          box-shadow: 0 0 4px 0 var(--theme-primary__color--1);
+          margin: 0 auto;
+          border-radius: 50%;
+          width: 128px;
+          height: 128px;
+        }
+        .component.type--login-form .form .input.type--image.error .image {
+          box-shadow: 0 0 4px 0 var(--theme-primary__messages--danger__color--1);
+        }
+        .component.type--login-form .form .input.type--image.warning .image {
+          box-shadow: 0 0 4px 0 var(--theme-primary__messages--warning__color--1);
+        }
+          .component.type--login-form .form .input.type--image .image img {
+            box-sizing: border-box;
+            border-radius: 50%;
+            padding: 2px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 50% 50%;
+          }
+        .component.type--login-form .form .input.type--image input[type="file"] {
+          display: none;
+        }
+/* LOGIN FORM MESSAGES */
+.component.type--login-form-messages {
+}
+  .component.type--login-form-messages .messages {
+    PADDING: 12PX 0;
+    display: grid;
+    align-items: end;
+  }
+    .component.type--login-form-messages .message {
+      position: relative;
+      box-sizing: border-box;
+      margin-bottom: 12px;
+      border-width: 1px;
+      border-style: solid;
+      border-radius: 8px;
+      width: 100%;
+      padding: 8px 16px;
+      line-height: 1.8em;
+    }
+    .component.type--login-form-messages .message {
+      color: var(--theme-primary__messages__color--1);
+      background-color: var(--theme-primary__messages__color--2);
+      border-color: var(--theme-primary__messages__color--3);
+    }
+    .component.type--login-form-messages .message.success {
+      color: var(--theme-primary__messages--success__color--1);
+      background-color: var(--theme-primary__messages--success__color--2);
+      border-color: var(--theme-primary__messages--success__color--3);
+    }
+    .component.type--login-form-messages .message.info {
+      color: var(--theme-primary__messages--info__color--1);
+      background-color: var(--theme-primary__messages--info__color--2);
+      border-color: var(--theme-primary__messages--info__color--3);
+    }
+    .component.type--login-form-messages .message.warning {
+      color: var(--theme-primary__messages--warning__color--1);
+      background-color: var(--theme-primary__messages--warning__color--2);
+      border-color: var(--theme-primary__messages--warning__color--3);
+    }
+    .component.type--login-form-messages .message.danger {
+      color: var(--theme-primary__messages--danger__color--1);
+      background-color: var(--theme-primary__messages--danger__color--2);
+      border-color: var(--theme-primary__messages--danger__color--3);
+    }
+      .component.type--login-form-messages .message .close {
+        cursor: pointer;
+        position: absolute;
+        top: 8px;
+        line-height: 1;
+      }
+      [dir="ltr"] .component.type--login-form-messages .message .close {
+        right: 8px;
+      }
+      [dir="rtl"] .component.type--login-form-messages .message .close {
+        left: 8px;
+      }
+      .component.type--login-form-messages .message .title {
+        text-transform: capitalize;
+        font-weight: bold;
+      }
