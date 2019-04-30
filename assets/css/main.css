@@ -222,7 +222,7 @@ a {
   }
     .component.type--header .logo {
       max-width: 48px;
-      min-height: 100%;
+      height: 100%;
       object-fit: contain;
       object-position: 50% 50%;
       border: 0 solid var(--theme-primary__color--1);
