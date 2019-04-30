@@ -27,14 +27,14 @@ a {
 :root {
   --container__width: 92%;
   --container__max-width: 960px;
-  --theme-primary__color--1: #591c58;
-  --theme-primary__color--2: #fcd207;
-  --theme-primary__color--3: #fff9ea;
+  --theme-primary__color--1: #1f3d71;
+  --theme-primary__color--2: #8eb42b;
+  --theme-primary__color--3: #eafbff;
   --theme-primary__color--4: #f5f7fa;
   --theme-primary__color--5: #d6d7d8;
   --theme-primary__color--black: #000;
   --theme-primary__color--white: #fff;
-  --theme-primary__overlay--1__color: rgba(89, 28, 88, 0.2);
+  --theme-primary__overlay--1__color: rgba(31, 61, 113, 0.2);
   --theme-primary__messages__color--1: #212121;
   --theme-primary__messages__color--2: #F5F5F5;
   --theme-primary__messages__color--3: #BDBDBD;
